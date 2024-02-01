@@ -7,8 +7,31 @@ html, body{
         font-weight: 100;
         font-style: normal;
         /* font-size: ; */
-      
+     
+        
 }
+.text-center{
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.mx-auto{
+    margin: auto;
+}
+
+
+.flex{
+    display: flex;
+
+}
+.flex-col{
+flex-direction: column;
+}
+.item-center{
+    align-items: center;
+    justify-content: center;
+}
+
 .button{
     padding: 20px;
     margin: 0 3px;
@@ -16,6 +39,7 @@ html, body{
     border-radius: 9px;
     cursor: pointer;
     width: 66px;
+    font-size: 24px;
 
 
 }
@@ -31,5 +55,12 @@ html, body{
     padding: 10px 0px;
     border: 2px solid black;
     border-radius: 6px;
-    font-size: 19px;
+    font-size: 23px;
 }
+/* .box{
+    border: 2px solid black;
+    border-radius: 10px;
+    
+   
+    
+} */

@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
- 
+
 </head>
+
 <body>
     <h2 class="text-center">Calculator</h2>
-    <div class="box flex flex-col item-center bg-red mx-auto m-w m-h">
+    <div id="Calculator" class="box flex flex-col item-center bg-red mx-auto m-w m-h">
         <div class="row">
-            <input class="input" type="text">
+            <div id="display">
+                
+                <!-- <div id="historyIcon" onclick="toggleHistory()">🕒</div>
+                <div id="history">
+                    <h2>History</h2>
+                    <ul id="historyList"></ul>
+                </div> -->
+            </div>
         </div>
-        <div class="row">
-            <button class="button">C</button>
-            <button class="button">%</button>
-            <button class="button">√</button>
-            <button class="button">-</button>
-        </div>
-        <div class="row">
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button">*</button>
-        </div>
-        <div class="row">
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button">/</button>
-        </div>
-        <div class="row">
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">1</button>
-            <button class="button">+</button>
-        </div>
-        <div class="row">
-            <button class="button">0</button>
-            <button class="button">00</button>
-            <button class="button">.</button>
-            <button class="button">=</button>
-        </div>
+    </div>
+    <div class="row">
+        <button onclick="clearAll('AC')" class="button">AC</button>
+        <button onclick="percentage('%')" class="button">%</button>
+        <button onclick="squreRoot('√')" class="button">√</button>
+        <button onclick="appendToDisplay('-')" class="button">-</button>
+    </div>
+    <div class="row">
+        <button onclick="appendToDisplay('7')" class="button">7</button>
+        <button onclick="appendToDisplay('8')" class="button">8</button>
+        <button onclick="appendToDisplay('9')" class="button">9</button>
+        <button onclick="appendToDisplay('*')" class="button">*</button>
+    </div>
+    <div class="row">
+        <button onclick="appendToDisplay('4')" class="button">4</button>
+        <button onclick="appendToDisplay('5')" class="button">5</button>
+        <button onclick="appendToDisplay('6')" class="button">6</button>
+        <button onclick="appendToDisplay('/')" class="button">/</button>
+    </div>
+    <div class="row">
+        <button onclick="appendToDisplay('2')" class="button">2</button>
+        <button onclick="appendToDisplay('3')" class="button">3</button>
+        <button onclick="appendToDisplay('1')" class="button">1</button>
+        <button onclick="appendToDisplay('+')" class="button">+</button>
+    </div>
+    <div class="row">
+        <button onclick="appendToDisplay('0')" class="button">0</button>
+        <button onclick=" clearLastCharacter('DEL')" class="button" id="del">DEL</button>
+        <button onclick="appendToDisplay('.')" class="button">.</button>
+        <button onclick=" calculateResult('=')" class="button">=</button>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

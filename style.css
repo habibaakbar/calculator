@@ -35,13 +35,20 @@ flex-direction: column;
 .button{
     padding: 20px;
     margin: 0 3px;
-    border: 2px solid black;
-    border-radius: 9px;
+    border: 1px solid black;
+    border-radius: 50%;
     cursor: pointer;
     width: 66px;
     font-size: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
+}
+#del{
+    text-align: center;
+    width: 70px;
+
+    font-size: 20px;
 }
 .row{
     padding: 8px 0px;
@@ -57,4 +64,25 @@ flex-direction: column;
     border-radius: 6px;
     font-size: 23px;
 }
+
+#display{
+    border: 2px solid black;
+    width: 260px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 23px;
+    padding-bottom: 15px;
+    
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #070707;
+    border-radius: 5px;
+    text-align: right;
+
+
+
+    box-shadow: 10px 5px  10px rgb(117, 119, 119) ;
+}
+
 
